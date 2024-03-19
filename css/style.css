@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(70, 68, 67);
+    color: rgba(253, 255, 255, 0.986);
+}
+
+.listaNav {
+    height: flex;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    background-image: radial-gradient(rgb(36, 35, 35), rgb(70, 68, 67));
+    
+}
+
+.listaHP {
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    font-size: 25px;
+    color: rgb(185, 146, 39);
+    text-decoration: none;
+    /* tirar o sublinhado do link */
+}
+
+p {
+    font-size: 25px;
+}
+
+img {
+    height: auto;
+    width: 15%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+#main, #contato, p, h2 {
+    text-align: center;
+}
+
+i {
+    font-size: 40px;
+    color: black;
+    margin-left: 10px;
+}
+
+#iconLP {
+    text-align: center;
+}
+
+i:hover {
+    opacity: 0.7;
+    color: rgb(185, 146, 39);
+}
+
+a:hover {
+    opacity: 0.7;
+    color: rgb(185, 146, 39);
+}
+
+.tittleSeparate {
+    border-top: 1px solid rgb(36, 35, 35);
+    margin-top: 20px;
+}
+
+.pSobre {
+    text-align: center;
+}
+
+.colorContact {
+    color: rgb(185, 146, 39);
+}
+
+#typed-text {
+    display: inline;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.bolhas {
+    position: relative;
+    display: flex;
+}
+
+.bolhas span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: rgb(192, 130, 13);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(192, 130, 33),
+    0 0 50px rgb(226, 205, 147),
+    0 0 50px rgb(236, 235, 231);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.bolhas span:nth-child(even){    
+    background: rgb(88, 66, 5);
+    box-shadow: 0 0 0 10px rgb(88, 66, 6),
+    0 0 50px rgb(189, 150, 45),
+    0 0 50px rgb(158, 126, 38);
+
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.positionFront {
+    position: inherit;
+}
